@@ -17,25 +17,14 @@
 			    <a href="#" style="color:white;" onclick=changeLanguage('en')>English</a>
           		<a href="#" style="color:white;" onclick=changeLanguage('sv')>Svenska</a>
         		<a href="#" style="color:white;" onclick=changeLanguage('hin')>Hindi</a>
+        		<a href="#" style="color:white;" onclick=logout()>Logout</a>
 		</div>
 	</div>
 	<div class="containmain" data-translate="greet">
 		<div class="center">
-			<div class="profile"></div>
-			<div class="form">
-			<div class="header">The Flying Dutchman</div>
-				<input type="text" class="topform" placeholder="Username"
-					name="username" id="username" language-text="username">
-				<br> 
-				<input type="password"
-					class="bottomform" id="password" placeholder="Password" name="password" language-text="password"><br>
-				<div class="button">
-					<input type="submit" class="button" onclick="login()" value="Sign In" language-text="login">
-				</div>
-				<div class="button">
-					<input type="submit" class="button" value="Login as Guest" language-text="guest_login" onclick="loginGuest()">
-				</div>
-			</div>
+			<form class="form">
+			<div class="header">Guest page</div>
+			</form>
 		</div>
 	</div>
 

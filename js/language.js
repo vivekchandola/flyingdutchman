@@ -1,3 +1,8 @@
+// jQuery document ready function
+$(function() {
+	translate();
+});
+
 function changeLanguage(current_lang) {
 	set_language(current_lang);
 	translate();
@@ -29,7 +34,7 @@ function translate() {
 		    })
 }
 
-//Store language as a HTML5 localstorage variable
+//Store language as a localstorage variable
 function set_language(language) {
 	localStorage.language = language;
 }
