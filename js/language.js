@@ -9,8 +9,7 @@ function changeLanguage(current_lang) {
 }
 
 function translate() {
-	lang = get_language();
-		languageDict = dict[lang];
+		var languageDict = getLanguageTranslation()[get_language()];
 
 		$('*').each(function() {
 		    	if ($(this).attr('language-text')) {
@@ -53,6 +52,7 @@ function get_language() {
 
 var dict ={
 "en": {
+	"title": "The Flying Dutchman",
     "welcome": "Welcome",
     "username": "Username",
     "password": "Password",
@@ -81,6 +81,7 @@ var dict ={
     "guest": "Guest"
 },
 "sv": {
+	"title": "Den flygande holländaren",
     "welcome": "välkommen",
     "username": "Användare",
     "password": "Lösenord",
@@ -109,6 +110,7 @@ var dict ={
     "guest": "Gäst"
 },
 "hin": {
+	"title": "उड़ने वाला डच वासी",
     "welcome": "स्वागत",
     "username": "उपयोगकर्ता नाम",
     "password": "पासवर्ड",
@@ -137,4 +139,6 @@ var dict ={
 }
 };
 
-
+function getLanguageTranslation(){
+	return dict;
+}
