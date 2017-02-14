@@ -1,0 +1,31 @@
+#purchases {
+    width:800px;
+ border-spacing: 0;
+ border-collapse: collapse;
+ border:none;
+ padding:2em;
+ font-family:sans-serif;
+}
+
+#purchases tr:nth-child(2n) {
+    background-color:#FCFFF5;
+}
+
+#purchases tr {
+    background-color:#D1DBBD;
+    border-bottom:10px solid #FCFFF5;
+    padding:1em;
+    color:red;
+}
+
+#purchases td {
+    padding-top:1em;
+    color: #193441;
+}
+
+#purchases th {
+    font-size:1em;
+    background-color:#193441;
+    color: #FCFFF5;
+    padding-top:1em;
+}
